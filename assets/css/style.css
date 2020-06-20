@@ -1,1 +1,380 @@
 
+    /*fonts*/
+
+      @charset "UTF-8";
+      @import url("https://fonts.googleapis.com/css?family=Lora:400,700|Source+Sans+Pro:300,400|Dosis:300,400,700");
+      @import url('https://fonts.googleapis.com/css?family=Montserrat');
+      @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+    /*body*/
+      *{
+      margin: 0px;
+      padding: 0px;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /*navbar*/
+
+      header{
+        display: flex;
+        justify-content: flex-end;
+        position: fixed;
+        width: 100%;
+        background-color: #111;
+        min-height: 55px;
+        z-index: 69;
+      }
+
+      #navbar{
+          max-width: 600px;
+          margin-right: 20px;
+          position: absolute;
+      }
+      nav ul{
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: nowrap;
+        list-style-type: none;
+        align-self: flex-end;
+      }
+
+      nav li{
+        font-size: 20px;
+        color: #2196F3;
+        min-width: 30px;
+        padding: 15px 0px 0px 0px;
+        font-family: 'Bebas Neue', cursive;
+        letter-spacing: 1.1px;
+        font-weight: 100;
+      }
+
+      nav li a {
+        color: inherit;
+        text-decoration: none;
+        font-size: 20px;
+        color: #2196F3;
+        min-width: 30px;
+        padding: 15px 20px;
+        transition: all .25s ease-in-out;
+      }
+
+      nav li a:hover{
+        text-decoration: none;
+        box-shadow: inset 0 -55px 0 0 #2196F3;
+        color: white;
+        position: relative;
+        bottom: 1px;
+      }
+
+      /*welcome section*/
+
+      #welcome-section{
+        background-color: #111;
+        color: #111;
+        font-family: "Montserrat";
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        letter-spacing: 1px;
+        }
+      h1 {
+      	background-image: url(https://media.giphy.com/media/cmegx6SssTKmEFEcwj/giphy.gif);
+      	background-size: cover;
+      	color: transparent;
+      	-moz-background-clip: text;
+      	-webkit-background-clip: text;
+      	font-size: 70px;
+      }
+      .about{
+      	font-size: 55px;
+      }
+
+      @media (max-width: 700px) {
+        h1{
+          font-size: 45px;
+        }
+        .about{
+          font-size: 35px;
+        }
+      }
+      .down{
+        background-color: #111;
+        color: dodgerblue;
+        border-width: thin;
+        margin-top: 20px;
+        border: 2px solid #2196F3;
+        padding: 10px 0px 10px 0px;
+        transition: all .2s ease-in-out;
+        overflow: hidden;
+        position: absolute;
+        bottom: 25px;
+      }
+      .down a{
+        text-decoration: none;
+        color: dodgerblue;
+        font-size: 20px;
+        padding: 10px 28px 10px 28px;
+        transition: all .2s ease-in-out;
+        top: 10px;
+        bottom: 10px;
+        height: 10px;
+      }
+
+      .down a:hover{
+        text-decoration: none;
+        box-shadow: inset 0 -55px 0 0 #2196F3;
+        color: white;
+      }
+
+
+      /*Background*/
+
+
+
+      .header{
+        font-family: 'Bebas Neue', cursive;
+        font-size: 37px;
+        padding-top: 100px;
+        letter-spacing: 1.1px;
+        color: #2196F3;
+        text-align: center;
+
+      }
+      .underline {
+        padding-bottom: 0.5px;
+        border-bottom: 4px solid #1f67db;
+        line-height: 100px;
+        width: 600px;
+      }
+      .back-article{
+        padding: 50px 100px 0px 100px;
+      }
+      .text{
+        margin: 0px 100px 20px 100px;
+        font-size: 30px;
+        font-weight: 300;
+        font-family: "Source Sans Pro", sans-serif;
+        color: #36363C;
+        text-align: justify;
+      }
+      .skills{
+        font-family: 'Bebas Neue', cursive;
+        font-size: 37px;
+        letter-spacing: 1.1px;
+        padding-left: 200px;
+        padding-bottom: 50px;
+        color: #2196F3;
+      }
+      .list{
+        margin: 0px 100px 10px 130px;
+        font-size: 30px;
+        font-weight: 300;
+        font-family: "Source Sans Pro", sans-serif;
+        color: #36363C;
+        list-style-type: square;
+      }
+        .resume {
+          text-decoration: none;
+          color: #36363C;
+          display: inline-block;
+          padding: 0px 7px;
+          transition: all .2s ease-in-out;
+          box-sizing: border-box;
+          text-decoration: none;
+          box-shadow: inset 0 -2px 0 #2196F3;
+  }
+        .resume:hover {
+          box-shadow: inset 0 -55px 0 0 #2196F3;
+          color: white;
+        }
+        strong{
+          font-weight: 400;
+        }
+
+      /**Projects**/
+
+      .header1{
+        font-family: 'Bebas Neue', cursive;
+        font-size: 37px;
+        padding-top: 50px;
+        letter-spacing: 1.1px;
+        color: #2196F3;
+        text-align: center;
+
+      }
+      #projects{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: stretch;
+        width: 90vw;
+        height: auto;
+        padding: 20px;
+        margin: 20px;
+
+      }
+      @media(max-width: 900px){
+       #projects{
+         display: flex;
+         flex-wrap: nowrap;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         width: 85vw;
+         height: auto;
+       }
+     }
+       #block{
+         border: none;
+         border-radius: 10px;
+         box-shadow: 0 10px 20px rgba(33,150,243,0.50), 0 6px 6px rgba(33,150,243,0.60);
+         margin: 10px;
+
+         text-align: center;
+         overflow: hidden;
+       }
+       .project-tile{
+         font-size: 25px;
+         color: #2196F3;
+         padding: 15px 15px 20px 15px;
+         font-family: 'Bebas Neue', cursive;
+         letter-spacing: 1.1px;
+         font-weight: 100;
+         transition: all .2s ease-in-out;
+      }
+
+      .pen{
+        text-decoration: none;
+        color: inherit;
+
+      }
+      .project-tile:hover{
+        text-decoration: none;
+        box-shadow: inset 0 -85px 0 0 #2196F3;
+        color: white;
+      }
+
+      /**Contact**/
+
+      .header2{
+        font-family: 'Bebas Neue', cursive;
+        font-size: 37px;
+        letter-spacing: 1.1px;
+        color: #2196F3;
+        text-align: center;
+      }
+      .text2{
+        margin: 0px 100px 20px 100px;
+        font-size: 23px;
+        font-weight: 300;
+        font-family: "Source Sans Pro", sans-serif;
+        color: #36363C;
+        text-align: center;
+      }
+
+      #email{
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        outline: none;
+        display: block;
+        width: 40%;
+        padding: 7px;
+        border: none;
+        display: flex;
+        justify-content: center;
+        border-bottom: 2px solid #2196F3;
+        background: transparent;
+        margin-bottom: 10px;
+        font: 32px , Helvetica, sans-serif;
+        height: 30px;
+      }
+
+      .emailid{
+        display: flex;
+        justify-content: center;
+      }
+      .submit-div{
+      font-family: "Montserrat";
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 10vh;
+      letter-spacing: 1px;
+      }
+
+      .submit{
+        color: dodgerblue;
+        border-width: thin;
+        margin-top: 20px;
+        border: 2px solid #2196F3;
+        padding: 10px 0px 10px 0px;
+        transition: all .2s ease-in-out;
+      }
+      .submit a{
+        text-decoration: none;
+        color: dodgerblue;
+        font-size: 20px;
+        padding: 10px 28px 10px 28px;
+        transition: all .2s ease-in-out;
+        top: 10px;
+        bottom: 10px;
+        height: 10px;
+      }
+
+      .submit a:hover{
+        text-decoration: none;
+        box-shadow: inset 0 -55px 0 0 #2196F3;
+        color: white;
+      }
+
+      #contact{
+        margin: 20px;
+        margin-bottom: 100px;
+      }
+
+      /**Footer**/
+
+      footer{
+          width: 100%;
+          background-color: #333;
+          height: 65px;
+          z-index: 69;
+          bottom: 0px;
+          display: flex;
+          justify-content: flex-end;
+
+        }
+        h4{
+          color: #2196F3;
+          padding: 20px;
+          font-size: 18px;
+          text-align: left;
+        }
+
+
+        #profile-link {
+          font-size: 34px;
+          padding: 10px 25px 10px 25px;
+          color: #2196F3;
+          text-decoration: none;
+        }
+
+        #profile-link:hover{
+          font-size: 40px;
+          padding: 10px 25px 10px 25px;
+
+        }
+
+        .left{
+          float: left !important;
+          position: absolute;
+          left: 0px;
+        }
